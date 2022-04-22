@@ -1,0 +1,106 @@
+body{
+    background-image: url(../login/icons/LCZhSJ.jpg);
+    background-size: cover;
+}
+h1{
+    color: rgb(215, 212, 212);
+    font-weight:bolder;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+.chat-icon{
+    margin: 0px auto;
+    height: 60px;
+    width: 60px;
+}   
+.chat-icon span{
+    font-weight: bolder;
+    margin-top: -3em;
+}
+#chat-iconn{
+    padding-top: 0.5em;
+    margin-top: 2.5em;
+}
+.user-input{
+padding-left: 25px;
+ background: url(../login/icons/icons8-user-24.png) no-repeat left;
+ background-size: 20px;
+}
+.psw_log{
+    padding-left: 25px;
+    background: url(../login/icons/icons8-password-24.png ) no-repeat left;
+    background-size: 20px;
+}
+* {
+    box-sizing: border-box;
+    font-family:cursive
+}
+label{
+    /*margin-left: 0 0 5px 5px;*/
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+span{
+    font-size: 20px;
+    margin-bottom: -10px;
+    color:red;
+}
+.login-wrapper{
+   display: flex;
+   flex-direction: column;
+}
+
+.login,.registration{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.container{
+    background-color: white;
+    padding: 16px;
+    width:30%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 2.5rem;
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="password"]{
+    height: 40px;
+    font-size: 18px;
+    width:100%;
+    margin: 2px 0 7px 0;
+    display: inline-block;
+    background-color: rgba(204, 186, 186, 0.269);
+    border-radius: 10px;
+    border: none;
+}
+
+#login-btn, #reg-btn{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #63c7f5;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+::placeholder{
+    margin-right: -10px;
+    color: #d3c8c8;
+}
+
+a{
+    color: rgb(60, 118, 243);
+    text-decoration: none;
+}

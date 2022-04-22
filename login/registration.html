@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Registration</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="chat-icon">
+        <img id="chat-iconn" src="./icons/276000579_1015442849087275_35362891818177612_n.png"  alt="icon" height="100px" width="100px"/>
+    </div>
+    
+    <div class="container">
+        
+        <div class="registration">
+            <h1>Registration</h1>
+        </div>
+        <hr>
+        <section class="login-wrapper">
+          <!--  <label for="email"><b>E-mail</b></label>--> 
+            <input type="text" class="email" value placeholder="E-mail" name="email" required>
+            <span id="email-info"></span>
+            <br>
+           <!-- <label for="un"><b>Username</b></label>-->
+            <input type="text" class="user-input" value placeholder="Username" name="un" id="un"  required>
+            <span id="username-info"> </span>
+          <br>
+         
+           <!--   <label for="psw"><b>Password</b></label> -->
+              <input type="password" placeholder="Password" name="psw" id="psw" class="psw_log" required/>
+              <span  id="psw-information">  </span>
+         <br>
+            <!--  <label for="psw-confirm"><b>Confirm password</b></label> -->
+              <input type="password" placeholder="Confirm password" name="psw-confirm" id="psw-confirm" class="psw_log" required/>
+              <span  id="psw-confirm-information">  </span>
+
+           <button id="reg-btn">Create account</button>
+        </section>
+
+        <footer>
+            <span>Already have an account? <a href="./login.html">Sign in</a></span>
+        </footer> 
+    </div>
+</body>
+</html>
