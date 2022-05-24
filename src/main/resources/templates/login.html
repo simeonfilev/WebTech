@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+
+<form class="box" th:action="@{/login}" th:method="POST">
+    <img id="chat-iconn" th:src="@{/icons/276000579_1015442849087275_35362891818177612_n.png}" alt="icon" height="100px" width="100px"/>
+    <h1>Login</h1>
+    <input type="text" name="username" placeholder="Enter Username" id="username">
+    <input type="password" name="password" placeholder="Enter Password" id="password">
+    <input type="submit" value="Login">
+    <footer>
+        <span>Don't have an account? <a th:href="@{/register}">Create an account</a></span>
+    </footer>
+</form>
+</body>
+</html>
