@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../icons/LCZhSJ.jpg);
+    background-size: cover;
+}
+
+.chat-icon{
+    margin: 0px auto;
+    height: 60px;
+    width: 60px;
+}
+.chat-icon span{
+    font-weight: bolder;
+    margin-top: -3em;
+
+}
+#chat-iconn{
+    display: block;
+    margin: -32px 108px;
+    margin-top: -70px;
+    padding-bottom: 20px;
+}
+
+.box{
+    border: 3px solid;
+    background-color: white;
+    width:300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 20px;
+}
+.box h1{
+    color: rgb(215, 212, 212);
+    font-weight:bolder;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.box input[type="text"]{
+    padding-left: 25px;
+    background: url(../icons/icons8-user-24.png) no-repeat left;
+    background-size: 20px;
+}
+.box input[type="password"]{
+    padding-left: 25px;
+    background: url(../icons/icons8-password-24.png ) no-repeat left;
+    background-size: 20px;
+}
+
+.box input[type="text"],
+.box input[type="password"]{
+    /*background: none;
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid blue;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+*/
+    height: 40px;
+    font-size: 18px;
+    width:100%;
+    margin: 2px 0 10px -10px;
+
+    display: inline-block;
+    background-color: rgba(204, 186, 186, 0.269);
+    border-radius: 10px;
+    border: none;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus{
+    width: 270px;
+    border-color: coral;
+}
+
+.box input[type="submit"]{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #63c7f5;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: coral;
+}
+
+a{
+    color: rgb(60, 118, 243);
+    text-decoration: none;
+}
+span{
+    font-size: 20px;
+    margin-bottom: -10px;
+    color:red;
+}

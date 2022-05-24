@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark gradient-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Instant Messenger</a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">
+              <li class="nav-item text-center mx-2 mx-lg-1">
+                <a class="nav-link" href="#!">
+                  <div>
+                    <span class="badge rounded-pill badge-notification "><i class="fa fa-comments fa-lg"></i></span>
+                  </div>
+                  Messages
+                </a>
+              </li>
+              <li class="nav-item text-center mx-2 mx-lg-1">
+                <a class="nav-link" href="#!">
+                  <div>
+                      <span>
+                        <img class="rounded-circle" width="20px" 
+                        src="https://www.pngitem.com/pimgs/m/22-220721_circled-user-male-type-user-colorful-icon-png.png">
+                      </span>
+                  </div>
+                  Profile
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+              <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+               
+                <div class="p-3 py-5">
+                <div class="col-md-12">
+                    <div class="p-1 py-1 d-flex justify-content-between">
+                        <span>Friends </span>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Add</button>
+                    </div>
+                   
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Georgi</h5>
+                          <a href="#" class="btn btn-primary">Start a chat</a>
+                        </div>
+                      </div>
+                      
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Sevcan</h5>
+                          <a href="#" class="btn btn-primary">Start a chat</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Elis</h5>
+                          <a href="#" class="btn btn-primary">Start a chat</a>
+                        </div>
+                      </div>
+                </div> 
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img class="rounded-circle mt-5" width="150px" 
+                        src="https://www.pngitem.com/pimgs/m/22-220721_circled-user-male-type-user-colorful-icon-png.png">
+                        <span class="font-weight-bold">Simeon</span>
+                        <span class="text-black-50">simeon@gmail.com</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label class="labels">Name</label>
+                            <input type="text" class="form-control" placeholder="Name" value="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Mobile Number</label>
+                            <input type="text" class="form-control" placeholder="Enter Phone Number" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Email</label>
+                            <input type="email" class="form-control" disabled placeholder="Enter email" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Country</label>
+                            <select class="form-select" aria-label="Select Contry">
+                                <option selected>Select Contry</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="USA">USA</option>
+                                <option value="Japan">Japan</option>
+                              </select>
+                        </div>
+                        <div class="col-md-6"><label class="labels">City</label><input type="text" class="form-control" value="" placeholder="City"></div>
+                        <div class="col-md-12">
+                            <label class="labels">Address</label>
+                            <input type="text" class="form-control" placeholder="Enter Address" value="">
+                        </div>
+                       
+                    </div>
+                  
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience"><span>Chats</span></div><br>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">WebTech</h5>
+                              <p class="card-text">Симеон: Качин последната версия на проекта в github. Може да я погледнете и да кажете дали ви харесва :) </p>
+                              <a href="#" class="btn btn-primary">Go to the chat</a>
+                            </div>
+                          </div>
+                          
+                          <div class="card" >
+                            <div class="card-body">
+                              <h5 class="card-title">Friends</h5>
+                              <p class="card-text">Петър: Днес навън?</p>
+                              <a href="#" class="btn btn-primary">Go to the chat</a>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">3-та група университет</h5>
+                              <p class="card-text">Крум: Някой може ли да ми прати домашното по ДИС?</p>
+                              <a href="#" class="btn btn-primary">Go to the chat</a>
+                            </div>
+                          </div>
+                    </div> 
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
