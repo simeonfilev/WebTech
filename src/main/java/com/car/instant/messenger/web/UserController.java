@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import com.car.instant.messenger.domain.models.binding.UserLoginBindingModel;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,9 +37,27 @@ public class UserController extends BaseController {
         this.modelMapper = modelMapper;
     }
 
+    @GetMapping("/")
+    public ModelAndView index() {
+        return this.view("profile");
+    }
+
+    @GetMapping("/profile")
+    public ModelAndView profile(@ModelAttribute UserLoginBindingModel userLoginBindingModel) {
+        ModelAndView modelAndView = new ModelAndView();
+            modelAndView.addObject("username", userLoginBindingModel.getUsername());
+            modelAndView.addObject("email", "elis");
+        return this.view("profile", modelAndView);
+    }
+
     @GetMapping("/login")
     public ModelAndView login() {
         return this.view("login");
+    }
+
+    @PostMapping("/login")
+    public ModelAndView loginPost(@ModelAttribute @Valid UserLoginBindingModel userLoginBindingModel, BindingResult bindingResult) {
+        return this.view("profile");
     }
 
     @GetMapping("/register")
