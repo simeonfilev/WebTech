@@ -33,7 +33,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .antMatchers("/admin").hasAnyAuthority("ADMIN", "MODERATOR")
 
                 .antMatchers("/css/**", "/js/**", "/img/**", "/"
-                        , "/details/**", "/profile/**", "/search/**"
+                        , "/details/**", "/profile/**", "/search/**", "/icons/**"
                         , "/confirmEmail/**", "/search/**", "/help/**").permitAll()
                 .anyRequest().authenticated()
                 .and()

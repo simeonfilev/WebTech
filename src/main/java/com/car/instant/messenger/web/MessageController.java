@@ -16,7 +16,7 @@ import com.car.instant.messenger.domain.entities.Message;
 import com.car.instant.messenger.service.MessageService;
 
 @RestController
-@RequestMapping("cars")
+@RequestMapping("messages")
 public class MessageController extends BaseController {
     private final MessageService messageService;
 
@@ -26,27 +26,27 @@ public class MessageController extends BaseController {
     }
 
     @GetMapping
-    List<Message> getAllCars() {
+    List<Message> getAllMessages() {
         return messageService.getAll();
     }
 
     @PostMapping
-    Message addCar(@RequestBody Message message) {
+    Message addMessage(@RequestBody Message message) {
         return messageService.add(message);
     }
 
     @GetMapping("/{id}")
-    Message getSingleCar(@PathVariable String id) {
+    Message getSingleMessage(@PathVariable String id) {
         return this.messageService.getById(id);
     }
 
     @PutMapping("/{id}")
-    Message modifyCar(@RequestBody Message modifiedMessage, @PathVariable String id) {
+    Message modifyMessage(@RequestBody Message modifiedMessage, @PathVariable String id) {
         return this.messageService.update(id, modifiedMessage);
     }
 
     @DeleteMapping("/{id}")
-    void deleteEmployee(@PathVariable String id) {
+    void deleteMessage(@PathVariable String id) {
         this.messageService.deleteById(id);
     }
 
